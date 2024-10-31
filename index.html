@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validimi i Fushave</title>
+    <style>
+        .error {
+            color: red;
+        }
+        .success {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Validimi i Fushave te Perdoruesit</h1>
+    <form id="userForm">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br>
+        <span id="emailError" class="error"></span><br>
+
+        <label for="phone">Numri i Telefonit:</label>
+        <input type="text" id="phone" name="phone"><br>
+        <span id="phoneError" class="error"></span><br>
+
+        <label for="password">Fjalekalimi:</label>
+        <input type="password" id="password" name="password"><br>
+        <span id="passwordError" class="error"></span><br>
+
+        <button type="submit">Dergo</button>
+    </form>
+    <div id="successMessage" class="success"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
